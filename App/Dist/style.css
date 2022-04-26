@@ -1,149 +1,141 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-* {
-  margin: 0;
-  padding: 0;
+.lineChartBox {
+  width: 80%;
+  margin: 0 auto;
 }
 
-html,
-body {
-  height: 100%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-#container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #121213;
-  height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#game {
+.buttonBoxLine {
   width: 100%;
-  max-width: 500px;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-header {
-  border-bottom: 1px solid #3a3a3c;
-}
-
-.title {
-  color: gainsboro;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin: 0.4rem 0 0.4rem 0;
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-#board-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   overflow: hidden;
 }
 
-#board {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.buttonBoxLine ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  display: block;
+  left: 50%;
 }
 
-.square {
-  border: 2px solid #3a3a3c;
-  min-width: 60px;
-  min-height: 60px;
-  font-size: 50px;
-  font-weight: bold;
-  color: gainsboro;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.buttonBoxLine ul li {
+  position: relative;
+  float: left;
+  display: block;
+  right: 50%;
+  list-style: none;
 }
 
-#keyboard-container {
-  height: 200px;
+.btn {
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
 }
 
-.keyboard-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.btn.redLine {
+  background-color: #ff6384;
+}
+
+.btn.blueLine {
+  background-color: #6363ff;
+}
+
+.btn.greenLine {
+  background-color: #63ff63;
+}
+
+.barChartBox {
+  padding-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.buttonBoxBar {
   width: 100%;
-  margin: 0 auto 8px;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  overflow: hidden;
 }
 
-.keyboard-row button {
-  font-family: inherit;
-  font-weight: bold;
-  border: 0;
-  padding: 0;
-  height: 58px;
-  cursor: pointer;
-  background-color: #818384;
-  color: #d7dadc;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  text-transform: uppercase;
-  margin-right: 6px;
-  border-radius: 4px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.buttonBoxBar ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  display: block;
+  left: 50%;
 }
 
-.keyboard-row button.wide-button {
-  -webkit-box-flex: 1.5;
-      -ms-flex-positive: 1.5;
-          flex-grow: 1.5;
+.buttonBoxBar ul li {
+  position: relative;
+  float: left;
+  display: block;
+  right: 50%;
+  list-style: none;
 }
 
-.spacer-half {
-  -webkit-box-flex: 0.5;
-      -ms-flex-positive: 0.5;
-          flex-grow: 0.5;
+.btn {
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.btn.redBar {
+  background-color: #ff6384;
+}
+
+.btn.blueBar {
+  background-color: #6363ff;
+}
+
+.btn.greenBar {
+  background-color: #63ff63;
+}
+
+.pieChartBox {
+  padding-top: 50px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.buttonBoxPie {
+  width: 100%;
+  overflow: hidden;
+}
+
+.buttonBoxPie ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  display: block;
+  left: 50%;
+}
+
+.buttonBoxPie ul li {
+  position: relative;
+  float: left;
+  display: block;
+  right: 50%;
+  list-style: none;
+}
+
+.btn {
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.btn.redPie {
+  background-color: #ff6384;
+}
+
+.btn.bluePie {
+  background-color: #6363ff;
+}
+
+.btn.greenPie {
+  background-color: #63ff63;
 }
 /*# sourceMappingURL=style.css.map */

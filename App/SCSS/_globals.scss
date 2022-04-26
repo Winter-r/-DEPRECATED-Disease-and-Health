@@ -1,11 +1,142 @@
-* {
-  margin: 0;
-  padding: 0;
+// Line Graph
+.lineChartBox {
+  width: 80%;
+  margin: 0 auto;
 }
 
-html,
-body {
-  height: 100%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.buttonBoxLine {
+  width: 100%;
+  overflow: hidden;
+}
+
+.buttonBoxLine ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  display: block;
+  left: 50%;
+}
+
+.buttonBoxLine ul li {
+  position: relative;
+  float: left;
+  display: block;
+  right: 50%;
+  list-style: none;
+}
+
+.btn {
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.btn.redLine {
+  background-color: rgba(255, 99, 132, 1);
+}
+
+.btn.blueLine {
+  background-color: rgba(99, 99, 255, 1);
+}
+
+.btn.greenLine {
+  background-color: rgba(99, 255, 99, 1);
+}
+
+// Bar Graph
+.barChartBox {
+  padding-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.buttonBoxBar {
+  width: 100%;
+  overflow: hidden;
+}
+
+.buttonBoxBar ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  display: block;
+  left: 50%;
+}
+
+.buttonBoxBar ul li {
+  position: relative;
+  float: left;
+  display: block;
+  right: 50%;
+  list-style: none;
+}
+
+.btn {
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.btn.redBar {
+  background-color: rgba(255, 99, 132, 1);
+}
+
+.btn.blueBar {
+  background-color: rgba(99, 99, 255, 1);
+}
+
+.btn.greenBar {
+  background-color: rgba(99, 255, 99, 1);
+}
+
+// Pie Chart
+.pieChartBox {
+  padding-top: 50px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.buttonBoxPie {
+  width: 100%;
+  overflow: hidden;
+}
+
+.buttonBoxPie ul {
+  list-style: none;
+  position: relative;
+  float: left;
+  display: block;
+  left: 50%;
+}
+
+.buttonBoxPie ul li {
+  position: relative;
+  float: left;
+  display: block;
+  right: 50%;
+  list-style: none;
+}
+
+.btn {
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.btn.redPie {
+  background-color: rgba(255, 99, 132, 1);
+}
+
+.btn.bluePie {
+  background-color: rgba(99, 99, 255, 1);
+}
+
+.btn.greenPie {
+  background-color: rgba(99, 255, 99, 1);
 }

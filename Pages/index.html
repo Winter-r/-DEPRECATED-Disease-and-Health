@@ -6,10 +6,66 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Disease and Health</title>
+  <link rel="stylesheet" href="../App/Dist/style.css">
 </head>
 
 <body>
+  <div class="lineChartBox">
+    <canvas id="myLineChart"></canvas>
+  </div>
 
+  <div class="buttonBoxLine">
+    <ul>
+      <li><a href="javascript:void();" class="btn redLine"
+          onclick="changeLineChart('rgba(255, 99, 132, 1)', 'Global cases per million people', [717.57, 258892.29, 585057.86, 384492.00, 444451.86, 558120.43, 2000000, 733200.14])">Global</a>
+      </li>
+      <li><a href="javascript:void();" class="btn blueLine"
+          onclick="changeLineChart('rgba(99, 99, 255, 1)', 'UK cases per million people', [0.00, 832.43, 25344.43, 10191.29, 4044.86, 35491.14, 181687.29, 33136.57])">UK</a>
+      </li>
+      <li><a href="javascript:void();" class="btn greenLine"
+          onclick="changeLineChart('rgba(99, 255, 99, 1)', 'UAE cases per million people', [0.00, 220.00, 1180.71, 2826.43, 1936.86, 803.29, 2581.86, 241.14])">UAE</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="barChartBox">
+    <canvas id="myBarChart"></canvas>
+  </div>
+
+  <div class="buttonBoxBar">
+    <ul>
+      <li><a href="javascript:void();" class="btn redBar"
+          onclick="changeBarChart('rgba(255, 99, 132, 1)', 'Global cases per million people', [717.57, 258892.29, 585057.86, 384492.00, 444451.86, 558120.43, 2000000, 733200.14])">Global</a>
+      </li>
+      <li><a href="javascript:void();" class="btn blueBar"
+          onclick="changeBarChart('rgba(99, 99, 255, 1)', 'UK cases per million people', [0.00, 832.43, 25344.43, 10191.29, 4044.86, 35491.14, 181687.29, 33136.57])">UK</a>
+      </li>
+      <li><a href="javascript:void();" class="btn greenBar"
+          onclick="changeBarChart('rgba(99, 255, 99, 1)', 'UAE cases per million people', [0.00, 220.00, 1180.71, 2826.43, 1936.86, 803.29, 2581.86, 241.14])">UAE</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="pieChartBox">
+    <canvas id="myPieChart"></canvas>
+  </div>
+
+  <div class="buttonBoxPie">
+    <ul>
+      <li><a href="javascript:void();" class="btn redPie"
+          onclick="changePieChart('Global cases per million people', [717.57, 258892.29, 585057.86, 384492.00, 444451.86, 558120.43, 2000000, 733200.14])">Global</a>
+      </li>
+      <li><a href="javascript:void();" class="btn bluePie"
+          onclick="changePieChart('UK cases per million people', [0.00, 832.43, 25344.43, 10191.29, 4044.86, 35491.14, 181687.29, 33136.57])">UK</a>
+      </li>
+      <li><a href="javascript:void();" class="btn greenPie"
+          onclick="changePieChart('UAE cases per million people', [0.00, 220.00, 1180.71, 2826.43, 1936.86, 803.29, 2581.86, 241.14])">UAE</a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../App/JS/main.js"></script>
 </body>
 
 </html>
